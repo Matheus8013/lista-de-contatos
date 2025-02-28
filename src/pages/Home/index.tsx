@@ -1,11 +1,11 @@
-import Cabecalho from '../../containers/header'
-import Lista from '../../containers/ListaContatos'
+import ContactList from '../../containers/ContactList'
+import SearchBar from '../../containers/SearchBar'
 
 const Home = () => {
   return (
     <>
-      <Cabecalho />
-      <Lista />
+      <SearchBar />
+      <ContactList />
     </>
   )
 }
