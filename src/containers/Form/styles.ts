@@ -5,6 +5,10 @@ import variaveis from '../../styles/variaveis'
 
 export const Form = styled.form`
   padding: 5.6vw;
+
+  @media screen {
+    justify-items: center;
+  }
 `
 
 export const InputForm = styled(Input)`

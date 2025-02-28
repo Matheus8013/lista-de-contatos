@@ -15,7 +15,7 @@ const SearchBar = () => {
     <S.SearchBar>
       <Input
         type="text"
-        placeholder="Pesquisar Contatos"
+        placeholder="Pesquisar"
         value={termo}
         onChange={(evento) => dispatch(alterarTermo(evento.target.value))}
       />

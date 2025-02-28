@@ -19,7 +19,6 @@ export const ButtonAdd = styled(Button)`
   border-bottom: 8px solid ${variaveis.verde3};
   background-color: #fff;
   color: #000;
-  margin-top: 3px;
   background-color: ${variaveis.verde2};
 
   &:hover {

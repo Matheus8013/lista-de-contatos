@@ -14,22 +14,17 @@ const ContactList = () => {
     )
   }
 
-  const contaContaos = () => {
-    const contatos = filtraContatos().length
-    if (contatos < 1) {
-      return 'Nenhum contato foi encrontrado'
-    } else {
-      return `${contatos} contato(s) encontrado(s)`
-    }
-  }
-
-  const mensagem = contaContaos()
+  const contatos = filtraContatos()
 
   return (
     <Container>
-      <Titulo>{mensagem}</Titulo>
+      <Titulo>
+        {contatos.length < 1
+          ? 'Nenhum contato encontrada'
+          : `${contatos.length} contato(s) encontrado(s)`}
+      </Titulo>
       <List>
-        {filtraContatos().map((c) => (
+        {contatos.map((c) => (
           <li key={c.nome}>
             <Contato
               nome={c.nome}

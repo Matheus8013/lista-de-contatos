@@ -35,6 +35,11 @@ export const Titulo = styled.h2`
   font-weight: bold;
   font-style: italic;
   margin-bottom: 16px;
+
+  @media (max-width: 1023px) {
+    text-align: center;
+    font-size: 28px;
+  }
 `
 
 export const Button = styled.button`

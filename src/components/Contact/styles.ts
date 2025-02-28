@@ -15,6 +15,10 @@ export const Card = styled.div`
   border-bottom: 8px solid #eee;
   border-right: 8px solid #eee;
   /* border-left: 8px solid #eee; */
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
 `
 
 export const Nome = styled.textarea`
@@ -37,6 +41,7 @@ export const Controls = styled.div`
   border-top: solid 3px #eee;
   padding-top: 8px;
   margin-left: 16px;
+  margin-top: 3px;
 `
 
 export const ButtonEdit = styled(ButtonAdd)`

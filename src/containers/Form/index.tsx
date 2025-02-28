@@ -4,7 +4,6 @@ import { Container, Titulo } from '../../styles/global'
 import { ButtonAdd } from '../SearchBar/styles'
 import * as S from './styles'
 import { useDispatch } from 'react-redux'
-import Contato from '../../models/Contato'
 import { registrar } from '../../store/reducers/contatos'
 
 const CadastrarContato = () => {
@@ -19,9 +18,13 @@ const CadastrarContato = () => {
   const cadastrarContato = (evento: FormEvent) => {
     evento.preventDefault()
 
-    const constatoParaAdicionar = new Contato(nome, telefone, email, 15)
-
-    dispatch(registrar(constatoParaAdicionar))
+    dispatch(
+      registrar({
+        nome,
+        telefone,
+        email
+      })
+    )
     navigate('/')
   }
 
